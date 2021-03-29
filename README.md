@@ -92,3 +92,5 @@ Ran 4 tests in 0.005s
 
 OK
 ```
+- Summary
+- TDD helps reduce the unexpected errors
