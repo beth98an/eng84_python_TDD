@@ -14,9 +14,6 @@
 - Refactor the code for the next test `BLUE`
 - this continues until all the test have successfully passed
 
-
-[10:48 AM] Abdul Haseeb Shahrukh Khan
-    
 |Method |   Checks that|   New in |
 |:---|:---|:---|
 |assertEqual(a, b)        | a == b              ||
@@ -37,7 +34,7 @@
 - Naming convention is extremely important 
 
 - `python -m pytest` to run the test.
-```python
+```
 # Let's create tests to check if the code would be running without any errors
 
 from simple_calc import SimpleCalc
@@ -65,7 +62,7 @@ class CalcTest(unittest.TestCase):
         self.assertEqual(self.calc.divide(15, 3), 5)
         # this test is checking if 15 / 3 = 5 would be true if true test will pass
 ```
-```python
+```
 class SimpleCalc:
 
     def add(self, value1, value2):
@@ -80,4 +77,18 @@ class SimpleCalc:
 
     def divide(self, value1, value2):
         return value1 / value2
+```
+- Running the test with `python -m unittest discover -v`
+```
+python -m unittest discover -v
+test_add (test_unittest_simplecalc.CalcTest) ... ok
+test_divide (test_unittest_simplecalc.CalcTest) ... ok
+test_multiply (test_unittest_simplecalc.CalcTest) ... ok
+test_subtract (test_unittest_simplecalc.CalcTest) ... ok
+
+----------------------------------------------------------------
+------
+Ran 4 tests in 0.005s
+
+OK
 ```
