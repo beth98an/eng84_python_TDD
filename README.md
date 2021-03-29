@@ -14,6 +14,8 @@
 - Refactor the code for the next test `BLUE`
 - this continues until all the test have successfully passed
 
+![TDD Cycle](https://github.com/beth98an/eng84_python_TDD/blob/main/TDD.png)
+
 |Method |   Checks that|   New in |
 |:---|:---|:---|
 |assertEqual(a, b)        | a == b              ||
