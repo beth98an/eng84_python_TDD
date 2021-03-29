@@ -37,6 +37,7 @@
 - Naming convention is extremely important 
 
 - `python -m pytest` to run the test.
+```python
 # Let's create tests to check if the code would be running without any errors
 
 from simple_calc import SimpleCalc
@@ -44,7 +45,6 @@ from simple_calc import SimpleCalc
 import unittest
 # importing unittest to inherit TestCase to create our tests against the code
 
-```python
 class CalcTest(unittest.TestCase):
     calc = SimpleCalc()  # creating an object of our SimpleCalc class
 
